@@ -3,6 +3,7 @@ const bookSearch = () => {
     const searchField = document.getElementById('searchField')
     const searchText = searchField.value;
     searchField.value = '';
+    // error add
     const error = document.getElementById('error');
     error.textContent = '';
     if(searchText === ''){
@@ -32,6 +33,7 @@ errorResult.textContent = ''
     if(books.length === 0){  
       errorResult.innerText = 'No Result Found'
     }
+    // book card image
       books.forEach(book => {
         const div = document.createElement('div');
         div.classList.add('col');
