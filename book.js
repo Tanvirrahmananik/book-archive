@@ -18,6 +18,13 @@ const bookSearch = () => {
 
 // result part
 const displayResult = books => {
+  // books result quantity
+  const bookAmount = document.getElementById('item-num');
+  bookAmount.textContent = '';
+  const h3 = document.createElement('h3');
+  h3.innerText = `Book Found: ${books.length}`;
+  bookAmount.appendChild(h3);
+  // error result
     const searchField = document.getElementById('searchResult');
     searchField.textContent = '';
 const errorResult = document.getElementById('no-result');
